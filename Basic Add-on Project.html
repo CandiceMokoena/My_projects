@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love4Food</title>
+  </head>
+  <style>
+    body {
+      background: rgba(186, 232, 232, 0.4);
+    }
+    h1 {
+      text-align: center;
+      font-size: 75px;
+      margin: 28px;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      font-size: 16px;
+      padding: 12px 14px;
+      border-radius: 22px;
+      font-weight: bold;
+    }
+    .container {
+      background: #f5f7ff;
+      margin: 42px auto;
+      padding: 25px 35px;
+      display: block;
+      border: 5px solid #f5f7ff;
+      box-shadow: 0px 0px 20px rgba(247, 247, 255, 0.5);
+      border-radius: 18px;
+      max-width: 750px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+    h3 {
+      font-size: 16px;
+      font-style: italic;
+      font-weight: normal;
+    }
+    h2 + h3 {
+      margin-top: -18px;
+    }
+    img {
+      width: 100%;
+      border-radius: 18px;
+    }
+    img:hover {
+      transform: scale(1.2);
+      transition: all 200ms ease-in-out;
+    }
+    .one {
+      margin-top: 10px;
+      transition: all 200ms ease-in-out;
+    }
+    .one:hover {
+      transform: scale(1.1);
+    }
+
+    .two img {
+      width: 100%;
+    }
+    .two {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 16px;
+      margin: 15px 0;
+    }
+
+    p {
+      font-size: 18px;
+    }
+    h4 {
+      text-align: left;
+      padding: 12px;
+    }
+    footer {
+      display: block;
+      margin: 0 auto;
+      font-size: 16px;
+      padding: 12px 14px;
+      border-radius: 22px;
+      font-weight: bold;
+    }
+    .tap {
+      border: 2px solid rgb(165, 165, 165);
+      box-shadow: 10px 5px 5px rgb(165, 165, 165);
+      font-size: 25px;
+    }
+    .tap:hover {
+      background-color: rgba(186, 232, 232, 0.4);
+      border: 2px solid rgba(186, 232, 232, 0.4);
+      transition: all 200ms ease-in-out;
+      cursor: pointer;
+    }
+    .play:hover {
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+      transform: scale(1.2);
+      animation: 0.5s linear 1s infinite alternate slidein;
+    }
+    h5 {
+      font-size: 18px;
+      font-weight: normal;
+      text-align: center;
+      color: rgb(6, 6, 6);
+      font-style: italic;
+    }
+    .black {
+      background-color: #f5f7ff;
+    }
+    .black .container {
+      background-color: rgba(186, 232, 232, 0.4);
+    }
+    .black button {
+      background-color: rgba(186, 232, 232, 0.4);
+    }
+    .black footer {
+      background-color: #f5f7ff;
+    }
+  </style>
+  <body>
+    <h1>🍝</h1>
+    <button class="play">CLICK ME 💃🏾</button>
+    <div class="container">
+      <h2>The Joy of Cooking:</h2>
+      <h3>Embrace the Pleasures of the Kitchen !</h3>
+      <img
+        class="one"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/032/original/WhatsApp_Image_2024-07-18_at_10.11.23_%282%29.jpeg?1721290639"
+        alt="Food"
+      />
+      <div class="two">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/030/original/WhatsApp_Image_2024-07-18_at_10.12.43_%281%29.jpeg?1721290594"
+          alt="Food"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/033/original/WhatsApp_Image_2024-07-18_at_10.11.23_%281%29.jpeg?1721290648"
+          alt="Food"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/034/original/WhatsApp_Image_2024-07-18_at_10.11.23.jpeg?1721290662"
+          alt="Food"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/031/original/WhatsApp_Image_2024-07-18_at_10.12.43.jpeg?1721290624"
+          alt="Food"
+        />
+      </div>
+      <p>
+        Cooking has become a passion that fills my life with joy and creativity
+        🤗. I find immense pleasure in exploring diverse cuisines, experimenting
+        with flavors, and discovering new dishes. Cooking not only nourishes my
+        body but also feeds my soul 🧘🏾‍♀️, allowing me to express my love for
+        others through the meals I prepare.
+      </p>
+      <h4>
+        👉🏾<a
+          href="https://cooking.nytimes.com/recipes/1017060-doughnuts"
+          target="_blank"
+          >Find doughnuts recipe here</a
+        >
+      </h4>
+      <footer class="tap">Join our online classes</footer>
+    </div>
+    <h5>Coded by Teballo Candice Mokoena</h5>
+    <script>
+      function JoinClasses() {
+        let name = prompt("Please enter your full names");
+        let email = prompt("Please enter your email address");
+
+        alert("Thank you " + name + " ,we'll keep in touch! 😁👍");
+      }
+
+      function ChangeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("black");
+      }
+
+      let ClickButton = document.querySelector(".play");
+      ClickButton.addEventListener("click", ChangeTheme);
+
+      let JoinFooter = document.querySelector("footer");
+      JoinFooter.addEventListener("click", JoinClasses);
+    </script>
+  </body>
+</html>
