@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Biography</title>
+  </head>
+  <style>
+    body {
+      font-family: Times New Roman;
+      background: linear-gradient(
+        111.5deg,
+        rgb(228, 247, 255) 21.9%,
+        rgb(255, 216, 194) 92.2%
+      );
+    }
+    ul {
+      list-style: none;
+      text-align: right;
+    }
+    li {
+      font-size: 18px;
+      margin: 18px;
+      padding: 4px 22px;
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 40%;
+    }
+    li:hover {
+      color: #fff;
+      background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    }
+    a {
+      text-decoration: none;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 18px;
+      font-weight: bold;
+      font-size: 38px;
+    }
+    img {
+      width: 300px;
+      display: block;
+      margin: 35px auto;
+      border: 5px solid black;
+      border-radius: 50% 50%;
+    }
+    .image-with-opacity {
+      opacity: 0.8;
+      z-index: -1;
+    }
+    .container {
+      text-align: center;
+    }
+    .biography {
+      text-align: center;
+      display: inline-block;
+      border: 3px solid rgb(210, 208, 208);
+      border-radius: 25px;
+      height: 430px;
+      width: 380px;
+      margin: 30px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    }
+    h4 {
+      text-align: center;
+      margin: 40px;
+      font-family: Times New Roman;
+      color: bl;
+    }
+    h3 {
+      text-align: center;
+      padding: 25px;
+    }
+    p {
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 2;
+    }
+    .course {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <ul>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#" id="contactLink">Contact me</a></li>
+      <li><a href="#" id="shecodesLink">She Codes</a></li>
+    </ul>
+    <h2>Teballo Candice Mokoena</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/745/original/IMG_0640.jpeg?1720723770"
+      class="image-with-opacity"
+      alt="My Image"
+    />
+    <div class="container">
+      <div class="biography">
+        <h3>
+          About me
+          <p>
+            I am Teballo Candice Mokoena from Mpumalanga, and I am deeply
+            passionate about reading, particularly "The Power of the
+            Subconscious Mind.<br />Cooking serves as my creative outlet,
+            allowing me to express my love for food. Committed to lifelong
+            learning and personal growth, I am constantly seeking new knowledge
+            and experiences to expand my horizons.
+          </p>
+        </h3>
+      </div>
+      <div class="biography">
+        <h3>
+          Education
+          <p>
+            In 2019, I excelled in my matric exams with 3 distinctions.
+            Subsequently, I enrolled at the
+            <em>University of Witwatersrand</em> in 2020, pursuing a BSc in
+            Construction Studies.<br />
+            I hold a strong belief in the transformative power of education in
+            any form. Presently, I am actively pursuing an online course with
+            SheCodes to enhance my skills as a
+            <span class="course">Junior Software Developer</span>.
+          </p>
+        </h3>
+      </div>
+      <div class="biography">
+        <h3>
+          Why SheCodes?
+          <p>
+            I chose to pursue a course with SheCodes Academy as a
+            <span class="course">Junior software developer</span> because of
+            their reputable curriculum and comprehensive approach to teaching
+            coding. <br /><br />
+            I am passionate about coding because it combines logical
+            problem-solving with creativity, enabling me to build innovative
+            solutions and bring ideas to life.
+          </p>
+        </h3>
+      </div>
+    </div>
+    <h4>Coded by Teballo Candice Mokoena</h4>
+    <script>
+      function ContactMe() {
+        let email = prompt("Please enter your email address📧");
+        let number = prompt("Please enter your phone number🤳");
+
+        alert("Thank you, we'll keep in touch! 😁👍");
+      }
+
+      function SheCodes() {
+        let email = prompt(
+          "Please enter your email address📧 to find out more about SheCodes"
+        );
+
+        alert("Please check your email, Good Luck! 😁👍");
+      }
+
+      let contactLink = document.getElementById("contactLink");
+      contactLink.addEventListener("click", ContactMe);
+
+      let shecodesLink = document.getElementById("shecodesLink");
+      shecodesLink.addEventListener("click", SheCodes);
+    </script>
+  </body>
+</html>
